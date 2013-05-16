@@ -22,5 +22,7 @@
 - `grunt`
 - `grunt server`
 
- 
+
+see [this](http://exposure101-development.blogspot.fr/2013/04/complete-end-to-end-setup-google-app.html)
+
 
