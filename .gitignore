@@ -3,13 +3,5 @@ dist
 .tmp
 .sass-cache
 app/components
-web/components
-web/scripts
-web/styles
-web/views
-web/.htaccess
-web/404.html
-web/favicon.ico
-web/index.html
-web/robots.txt
-web/classes
+app/WEB-INF/classes
+app/WEB-INF/lib
