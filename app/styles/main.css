@@ -19,8 +19,85 @@ body {
     position: relative;
 
     color: white;
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #22afca, 0 0 7px #22afca, 0 0 10px #22afca;
+    font-family: "Droid Sans", sans-serif;
+}
+
+.ice {
+    -webkit-box-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 30px #22afca,
+    0 0 35px #22afca,
+    0 0 45px #22afca,
+    0 0 60px #22afca,
+    inset 0 0 10px white,
+    inset 0 0 20px white,
+    inset 0 0 30px #22afca,
+    inset 0 0 40px #22afca,
+    inset 0 0 45px #22afca
+;
+}
+
+.fire {
+    -webkit-box-shadow: 0 0 10px #eecd30,
+    0 0 20px #eecd30,
+    0 0 30px #fe601e,
+    0 0 35px #fe601e,
+    0 0 45px #fe601e,
+    0 0 60px #fe601e,
+    inset 0 0 10px #eecd30,
+    inset 0 0 20px #eecd30,
+    inset 0 0 30px #fe601e,
+    inset 0 0 40px #fe601e,
+    inset 0 0 45px #fe601e
+;
 }
 
 .done-true {
     text-decoration: line-through;
+}
+
+.container_form_todo {
+    height: 200px;
+    margin: 10px auto ;
+    border-radius: 2px;
+    border: 10px solid white;
+}
+.container_form_todo form {
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #bce7ef;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #bce7ef;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #bce7ef;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #bce7ef;
+}
+
+input[type="text"] {
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #22afca, 0 0 7px #22afca, 0 0 10px #22afca;
+    /*text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #22afca, 0 0 7px #22afca, 0 0 8px #22afca, 0 0 10px #22afca, 0 0 15px #22afca;*/
+
+    /*border-radius: 2px;*/
+    /*border: 2px solid white;*/
+
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 1px #eecd30, 0 0 3px #eecd30, 0 0 5px #fe601e, 0 0 10px #fe601e;
+
+    border-radius: 2px;
+    border: 2px solid white;
+    width: 100px;
 }
