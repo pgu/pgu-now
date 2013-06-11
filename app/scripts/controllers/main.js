@@ -10,7 +10,7 @@ angular.module('pguNowApp').controller('MainCtrl', ['$scope', '$http', function 
     $scope.addTodo = function () {
         $scope.todos.push({text: $scope.todoText, done: false});
         $scope.todoText = '';
-    }
+    };
 
     $scope.remaining = function () {
         var count = 0;
@@ -18,7 +18,7 @@ angular.module('pguNowApp').controller('MainCtrl', ['$scope', '$http', function 
             count += todo.done ? 0 : 1;
         });
         return count;
-    }
+    };
 
     $scope.archive = function () {
         var oldTodos = $scope.todos;
@@ -27,8 +27,8 @@ angular.module('pguNowApp').controller('MainCtrl', ['$scope', '$http', function 
             if (!todo.done) {
                 $scope.todos.push(todo);
             }
-        })
-    }
+        });
+    };
 
     $scope.callServer = function () {
         $http.get('hello').success(function (data) {
