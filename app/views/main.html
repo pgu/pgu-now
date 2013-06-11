@@ -1,11 +1,19 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+<div>
+    <h1>TODOs</h1>
+
+    <p>{{remaining()}} of {{todos.length}} remaining</p>
+    <ul>
+        <li ng-repeat="todo in todos">
+            <input type="checkbox" ng-model="todo.done" />
+            <span class="done-{{todo.done}}">{{todo.text}}</span>
+        </li>
+    </ul>
+    <form ng-submit="addTodo()">
+        <input type="text" ng-model="todoText" size="30" placeholder="add new todo here" />
+        <input class="btn-primary" type="submit" value="add" />
+    </form>
+    <h3>Test server</h3>
     <input type="button" value="call server" ng-click="callServer()" />
+
     <p>{{server_answer}}</p>
 </div>
