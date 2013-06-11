@@ -19,7 +19,7 @@ body {
     position: relative;
 
     color: white;
-    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #22afca, 0 0 7px #22afca, 0 0 10px #22afca;
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 7px #22afca, 0 0 10px #22afca, 0 0 15px #22afca;
     font-family: "Droid Sans", sans-serif;
 }
 
@@ -55,13 +55,27 @@ body {
 
 .done-true {
     text-decoration: line-through;
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 7px #15e90e, 0 0 10px #15e90e, 0 0 15px #15e90e;
+}
+
+@-webkit-keyframes opening_bloc_width {
+    from { width: 10px; }
+    to { width: 100%; }
+}
+
+@-webkit-keyframes opening_bloc_height {
+    from { height: 10px; }
+    to { height: 200px; }
 }
 
 .container_form_todo {
-    height: 200px;
+    height: 10px;
     margin: 10px auto ;
     border-radius: 2px;
     border: 10px solid white;
+    overflow: hidden;
+
+    -webkit-animation: opening_bloc_width 2s ease-out, opening_bloc_height 2s 2s ease-in-out forwards;
 }
 .container_form_todo form {
     margin-top: 50px;
@@ -82,7 +96,7 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 
 input[type="text"] {
-    background-color: black;
+    background-color: transparent;
     color: white;
     text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #22afca, 0 0 7px #22afca, 0 0 10px #22afca;
     /*text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #22afca, 0 0 7px #22afca, 0 0 8px #22afca, 0 0 10px #22afca, 0 0 15px #22afca;*/
