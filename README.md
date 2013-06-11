@@ -25,4 +25,11 @@
 
 see [this](http://exposure101-development.blogspot.fr/2013/04/complete-end-to-end-setup-google-app.html)
 
+#### Intellij, wtf
+- how complicated it is in intellij, dios mio!
+- import module as **java** if not, you just can not add it the web facet and thus unable to add the appengine facet
+- create artifacts, runners, ... for 'app' and 'dist'
+- `grunt` generates the 'dist' and upload it with
+`./appcfg.sh --email=guilcher.pascal.dev@gmail.com update /media/pgu/workspace_intellij_perso/pgu-now/dist`
+(yeah, intellij does not give a way to change the google account)
 
