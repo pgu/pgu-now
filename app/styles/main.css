@@ -20,7 +20,8 @@ body {
 
     color: white;
     text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 7px #22afca, 0 0 10px #22afca, 0 0 15px #22afca;
-    font-family: "Droid Sans", sans-serif;
+    /*font-family: "Droid Sans", sans-serif;*/
+    font-family: 'Source Code Pro', sans-serif;
 }
 
 .ice {
