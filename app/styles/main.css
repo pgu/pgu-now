@@ -83,32 +83,8 @@ body {
     margin-left: 30px;
 }
 
-/*input::-webkit-input-placeholder { *//* WebKit browsers */
-    /*color:    #bce7ef;*/
-/*}*/
-/*input:-moz-placeholder { *//* Mozilla Firefox 4 to 18 */
-    /*color:    #bce7ef;*/
-/*}*/
-/*input::-moz-placeholder { *//* Mozilla Firefox 19+ */
-    /*color:    #bce7ef;*/
-/*}*/
-/*input:-ms-input-placeholder { *//* Internet Explorer 10+ */
-    /*color:    #bce7ef;*/
-/*}*/
-
-input[type="text"] {
-    /*background-color: transparent;*/
-    /*color: white;*/
-    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #22afca, 0 0 7px #22afca, 0 0 10px #22afca;
-    /*text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #22afca, 0 0 7px #22afca, 0 0 8px #22afca, 0 0 10px #22afca, 0 0 15px #22afca;*/
-
-    /*border-radius: 2px;*/
-    /*border: 2px solid white;*/
-
-}
-
 input[type="submit"] {
-    background-color: black;
+    background-color: transparent;
     color: white;
     text-shadow: 0 0 1px #eecd30, 0 0 3px #eecd30, 0 0 5px #fe601e, 0 0 10px #fe601e;
 

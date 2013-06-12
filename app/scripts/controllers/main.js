@@ -8,6 +8,10 @@ angular.module('pguNowApp').controller('MainCtrl', ['$scope', '$http', function 
     ];
 
     $scope.addTodo = function () {
+        if (!$scope.todoText) {
+            return;
+        }
+
         $scope.todos.push({text: $scope.todoText, done: false});
         $scope.todoText = '';
     };
