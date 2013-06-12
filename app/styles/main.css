@@ -83,18 +83,18 @@ body {
     margin-left: 30px;
 }
 
-input::-webkit-input-placeholder { /* WebKit browsers */
-    color:    #bce7ef;
-}
-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:    #bce7ef;
-}
-input::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #bce7ef;
-}
-input:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:    #bce7ef;
-}
+/*input::-webkit-input-placeholder { *//* WebKit browsers */
+    /*color:    #bce7ef;*/
+/*}*/
+/*input:-moz-placeholder { *//* Mozilla Firefox 4 to 18 */
+    /*color:    #bce7ef;*/
+/*}*/
+/*input::-moz-placeholder { *//* Mozilla Firefox 19+ */
+    /*color:    #bce7ef;*/
+/*}*/
+/*input:-ms-input-placeholder { *//* Internet Explorer 10+ */
+    /*color:    #bce7ef;*/
+/*}*/
 
 input[type="text"] {
     background-color: transparent;
