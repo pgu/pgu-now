@@ -40,17 +40,17 @@ body {
 }
 
 .fire {
-    -webkit-box-shadow: 0 0 10px #eecd30,
-    0 0 20px #eecd30,
+    -webkit-box-shadow: 0 0 5px #eecd30,
+    0 0 10px #eecd30,
+    0 0 15px #fe601e,
+    0 0 17px #fe601e,
+    0 0 22px #fe601e,
     0 0 30px #fe601e,
-    0 0 35px #fe601e,
-    0 0 45px #fe601e,
-    0 0 60px #fe601e,
+    inset 0 0 5px #eecd30,
     inset 0 0 10px #eecd30,
-    inset 0 0 20px #eecd30,
-    inset 0 0 30px #fe601e,
-    inset 0 0 40px #fe601e,
-    inset 0 0 45px #fe601e
+    inset 0 0 15px #fe601e,
+    inset 0 0 20px #fe601e,
+    inset 0 0 22px #fe601e
 ;
 }
 
@@ -76,7 +76,7 @@ body {
     border: 10px solid white;
     overflow: hidden;
 
-    -webkit-animation: opening_bloc_width 2s ease-out, opening_bloc_height 2s 2s ease-in-out forwards;
+    -webkit-animation: opening_bloc_width 1s ease-out, opening_bloc_height 1s 1s ease-in-out forwards;
 }
 .container_form_todo form {
     margin-top: 50px;
@@ -97,8 +97,8 @@ body {
 /*}*/
 
 input[type="text"] {
-    background-color: transparent;
-    color: white;
+    /*background-color: transparent;*/
+    /*color: white;*/
     text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 5px #22afca, 0 0 7px #22afca, 0 0 10px #22afca;
     /*text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #22afca, 0 0 7px #22afca, 0 0 8px #22afca, 0 0 10px #22afca, 0 0 15px #22afca;*/
 
