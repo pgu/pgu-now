@@ -1,34 +1,32 @@
-<div class="container-fluid">
-    <div class="row-fluid">
-        <!-- title -->
-        <h1>TODOs</h1>
-    </div>
-    <div class="row-fluid">
-        <div class="span6">
-            <!--list-->
-            <p>{{remaining()}} of {{todos.length}} remaining</p>
-            <ul class="unstyled">
-                <li ng-repeat="todo in todos">
-                    <span class="done-{{todo.done}}" style="cursor: pointer;" ng-click="todo.done = !todo.done">{{todo.text}}</span>
-                </li>
-            </ul>
+<div class="row-fluid">
+    <!-- title -->
+    <h1>TODOs</h1>
+</div>
+<div class="row-fluid">
+    <div class="span6">
+        <!--list-->
+        <p>{{remaining()}} of {{todos.length}} remaining</p>
+        <ul class="unstyled">
+            <li ng-repeat="todo in todos">
+                <span class="done-{{todo.done}}" style="cursor: pointer;" ng-click="todo.done = !todo.done">{{todo.text}}</span>
+            </li>
+        </ul>
 
-        </div>
-        <div class="span6">
-            <div class="container_form_todo ice span12">
-                <!--edition-->
-                <form ng-submit="addTodo()">
-                    <input type="text" ng-model="todoText" size="30" placeholder="add new todo here" />
-                    <p></p>
-                    <input class="fire" type="submit" value="add" />
-                </form>
-            </div>
+    </div>
+    <div class="span6">
+        <div class="container_form_todo big_ice span12">
+            <!--edition-->
+            <form ng-submit="addTodo()">
+                <input type="text" ng-model="todoText" size="30" placeholder="add new todo here" />
+                <p></p>
+                <input class="btn_fire" type="submit" value="add" />
+            </form>
         </div>
     </div>
-    <div class="row-fluid">
-        <h3>Test server</h3>
-        <input type="button" value="call server" ng-click="callServer()" />
+</div>
+<div class="row-fluid">
+    <h3>Test server</h3>
+    <input type="button" class="btn_ice" value="call server" ng-click="callServer()" />
 
-        <p>{{server_answer}}</p>
-    </div>
+    <p>{{server_answer}}</p>
 </div>

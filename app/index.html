@@ -35,7 +35,15 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view></div>
+    <!-- main toolbar -->
+    <div class="container-fluid" ng-controller="ToolbarCtrl">
+        <div class="row-fluid">
+            <input type="button" class="toolbarOption btn_ice" ng-repeat="app in apps" value="{{app}}" />
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- current application -->
+    <div class="container-fluid" ng-view></div>
 
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
@@ -45,6 +53,7 @@
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/toolbarCtrl.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <!-- endbuild -->
 

@@ -1135,10 +1135,12 @@ input[type="color"],
 .uneditable-input {
   background-color: transparent;
   border: 2px solid white;
+
   -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
      -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
        -o-transition: border linear 0.2s, box-shadow linear 0.2s;
           transition: border linear 0.2s, box-shadow linear 0.2s;
+
   -webkit-box-shadow: 0 0 5px white,
     /*0 0 10px white,*/
     0 0 15px #22afca,

@@ -24,7 +24,8 @@ body {
     font-family: 'Source Code Pro', sans-serif;
 }
 
-.ice {
+.big_ice {
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 7px #22afca, 0 0 10px #22afca, 0 0 15px #22afca;
     -webkit-box-shadow: 0 0 10px white,
     0 0 20px white,
     0 0 30px #22afca,
@@ -40,6 +41,7 @@ body {
 }
 
 .fire {
+    text-shadow: 0 0 1px #eecd30, 0 0 3px #eecd30, 0 0 5px #fe601e, 0 0 10px #fe601e;
     -webkit-box-shadow: 0 0 5px #eecd30,
     0 0 10px #eecd30,
     0 0 15px #fe601e,
@@ -52,6 +54,66 @@ body {
     inset 0 0 20px #fe601e,
     inset 0 0 22px #fe601e
 ;
+}
+
+.btn_ice {
+    text-shadow: 0 0 1px #fff, 0 0 3px #fff, 0 0 7px #22afca, 0 0 10px #22afca, 0 0 15px #22afca;
+    -webkit-box-shadow: 0 0 5px white,
+    0 0 15px #22afca,
+    0 0 22px #22afca,
+    inset 0 0 5px white,
+    inset 0 0 15px #22afca,
+    inset 0 0 22px #22afca;
+}
+
+.btn_ice:hover,
+.btn_ice:focus {
+    -webkit-box-shadow: 0 0 5px white,
+    0 0 10px white,
+    0 0 15px #22afca,
+    0 0 17px #22afca,
+    0 0 22px #22afca,
+    inset 0 0 5px white,
+    inset 0 0 10px white,
+    inset 0 0 15px #22afca,
+    inset 0 0 20px #22afca,
+    inset 0 0 22px #22afca;
+}
+
+.btn_ice:active {
+    color: transparent;
+    text-shadow: none;
+    background-color: #fff;
+}
+
+.btn_fire {
+    text-shadow: 0 0 1px #eecd30, 0 0 3px #eecd30, 0 0 7px #fe601e, 0 0 10px #fe601e, 0 0 15px #fe601e;
+    -webkit-box-shadow: 0 0 5px #eecd30,
+    0 0 15px #fe601e,
+    0 0 22px #fe601e,
+    inset 0 0 5px #eecd30,
+    inset 0 0 15px #fe601e,
+    inset 0 0 22px #fe601e;
+}
+
+.btn_fire:hover,
+.btn_fire:focus {
+    -webkit-box-shadow: 0 0 5px #eecd30,
+    0 0 10px #eecd30,
+    0 0 15px #fe601e,
+    0 0 17px #fe601e,
+    0 0 22px #fe601e,
+    inset 0 0 5px #eecd30,
+    inset 0 0 10px #eecd30,
+    inset 0 0 15px #fe601e,
+    inset 0 0 20px #fe601e,
+    inset 0 0 22px #fe601e;
+}
+
+.btn_fire:active {
+    color: transparent;
+    text-shadow: none;
+    background-color: #eecd30;
 }
 
 .done-true {
@@ -83,12 +145,29 @@ body {
     margin-left: 30px;
 }
 
-input[type="submit"] {
+input[type="submit"],
+input[type="button"]
+{
     background-color: transparent;
+    border: 2px solid white;
+
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+
+    font-family: inherit;
     color: white;
-    text-shadow: 0 0 1px #eecd30, 0 0 3px #eecd30, 0 0 5px #fe601e, 0 0 10px #fe601e;
 
     border-radius: 2px;
-    border: 2px solid white;
     width: auto;
+}
+
+.toolbarOption {
+    float: left;
+    margin: 20px;
+
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
 }
