@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('pguNowApp').controller('MainCtrl', ['$scope', '$http', function ($scope, $http) {
+angular.module('pguNowApp').controller('TodosCtrl', ['$scope', '$http', function ($scope, $http) {
 
     $scope.todos = [
         {text: 'learn angular', done: true},

@@ -38,7 +38,7 @@
     <!-- main toolbar -->
     <div class="container-fluid" ng-controller="ToolbarCtrl">
         <div class="row-fluid">
-            <input type="button" class="toolbarOption btn_ice" ng-repeat="app in apps" value="{{app}}" />
+            <input type="button" class="toolbarOption btn_ice" ng-repeat="app in apps" value="{{app.name}}" ng-click="goTo(app)" />
         </div>
         <div class="clearfix"></div>
     </div>
@@ -54,7 +54,9 @@
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/toolbarCtrl.js"></script>
-    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/dashboardCtrl.js"></script>
+    <script src="scripts/controllers/gameACtrl.js"></script>
+    <script src="scripts/controllers/todosCtrl.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
