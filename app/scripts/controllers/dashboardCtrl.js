@@ -2,6 +2,19 @@
 
 angular.module('pguNowApp').controller('DashboardCtrl', ['$scope', '$timeout', function ($scope, $timeout) {
 
+    function pad(n) {
+        return n < 10 ? '0' + n : n;
+    }
+
+    function getTimeFormatted(date) {
+        return pad(date.getHours())  //
+            + ':'                       //
+            + pad(date.getMinutes()) //
+            + ':'                       //
+            + pad(date.getSeconds()) //
+            ;
+    }
+
     var currentDate = new Date();
     var currentDay = pad(currentDate.getDate())//
             + '/'                                 //
@@ -16,19 +29,6 @@ angular.module('pguNowApp').controller('DashboardCtrl', ['$scope', '$timeout', f
     $scope.currentDay = currentDay;
     $scope.currentTime = currentTime;
 
-    function pad(n) {
-        return n < 10 ? '0' + n : n;
-    }
-
-    function getTimeFormatted(date) {
-        return pad(date.getHours())  //
-            + ':'                       //
-            + pad(date.getMinutes()) //
-            + ':'                       //
-            + pad(date.getSeconds()) //
-            ;
-    }
-
     function updateCurrentTime() {
 
         var now = new Date();
@@ -40,4 +40,5 @@ angular.module('pguNowApp').controller('DashboardCtrl', ['$scope', '$timeout', f
     }
 
     updateCurrentTime();
+
 }]);

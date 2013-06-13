@@ -8,6 +8,8 @@
   "eqeqeq": true,
   "immed": true,
   "latedef": true,
+  "laxbreak": true,
+  "laxcomma": true,
   "newcap": true,
   "noarg": true,
   "quotmark": "single",

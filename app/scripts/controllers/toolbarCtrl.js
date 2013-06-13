@@ -2,14 +2,14 @@
 
 angular.module('pguNowApp').controller('ToolbarCtrl', ['$scope', '$location', function ($scope, $location) {
 
-    function app(name, hash) {
+    function App(name, hash) {
         this.name = name;
         this.hash = hash;
     }
 
-    var dashboard = new app('Dashboard', 'dashboard');
-    var todos = new app('TODOs', 'todos');
-    var gameA = new app('Game A', 'gameA');
+    var dashboard = new App('Dashboard', 'dashboard');
+    var todos = new App('TODOs', 'todos');
+    var gameA = new App('Game A', 'gameA');
 
     $scope.apps = [dashboard, todos, gameA];
 
