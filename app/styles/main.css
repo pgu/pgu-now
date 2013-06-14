@@ -171,3 +171,7 @@ input[type="button"]
     line-height: 50px;
     text-align: center;
 }
+
+.word {
+    margin-right: 5px;
+}

@@ -1,4 +1,13 @@
 <div class="row-fluid">
     <!-- title -->
     <h1>{{title}}</h1>
+
+    <p>
+        <span ng-repeat="word in words" class="word">{{word}}</span>
+    </p>
+    <div>
+        <input type="text" ng-trim="false" ng-model="user_word" placeholder="Type here" />
+        <input type="button" class="btn_ice" value="refresh" />
+    </div>
+
 </div>
