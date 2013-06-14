@@ -12,14 +12,14 @@
       </configuration>
       <facet type="google-app-engine" name="Google App Engine2">
         <configuration>
-          <sdk-home-path>$MODULE_DIR$/../../eclipse/perso_indigo_2/plugins/com.google.appengine.eclipse.sdkbundle_1.8.0/appengine-java-sdk-1.8.0</sdk-home-path>
+          <sdk-home-path>$MODULE_DIR$/../../eclipse/juno/plugins/com.google.appengine.eclipse.sdkbundle_1.8.0/appengine-java-sdk-1.8.0</sdk-home-path>
         </configuration>
       </facet>
     </facet>
     <facet type="web" name="Web-Dist">
       <configuration>
         <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/dist/WEB-INF/web.xml" />
         </descriptors>
         <webroots>
           <root url="file://$MODULE_DIR$/dist" relative="/" />
@@ -27,7 +27,7 @@
       </configuration>
       <facet type="google-app-engine" name="Google App Engine">
         <configuration>
-          <sdk-home-path>$MODULE_DIR$/../../eclipse/perso_indigo_2/plugins/com.google.appengine.eclipse.sdkbundle_1.8.0/appengine-java-sdk-1.8.0</sdk-home-path>
+          <sdk-home-path>$MODULE_DIR$/../../eclipse/juno/plugins/com.google.appengine.eclipse.sdkbundle_1.8.0/appengine-java-sdk-1.8.0</sdk-home-path>
         </configuration>
       </facet>
     </facet>
@@ -41,8 +41,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="AppEngine Dev2" level="application_server_libraries" />
-    <orderEntry type="library" name="AppEngine API" level="project" />
+    <orderEntry type="library" name="appengine-java-sdk-1.8" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="AppEngine Dev 1.7.1" level="application_server_libraries" />
   </component>
 </module>
 
